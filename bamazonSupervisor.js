@@ -58,8 +58,6 @@ function viewProducts() {
 
         }
 
-        
-
         console.table(['department_id', 'department_name', 'overhead_costs', 'product_sales', 'total_profit'], allValues);
         
     })
