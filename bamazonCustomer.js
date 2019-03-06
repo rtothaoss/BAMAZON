@@ -10,15 +10,19 @@ var connection = mysql.createConnection({
 });
 
 
-
+var globalRes = []
 
 connection.query('SELECT * from products', function (err, res) {
     
     for (var i = 0; i < res.length; i++) {
 
     console.log('item_id: ' + res[i].item_id + ' name: ' + res[i].product_name + ' price: ' + res[i].price)    
-      
+    globalRes = res
     }
+
+// console.log(globalRes)
+
+
 
     
 inquirer
@@ -45,6 +49,7 @@ inquirer
 
             function (err, res) {
             var quantity = res[0].stock_quantity
+            // var product_sales = answer2 * 
                 if(answer2 <= quantity && answer2 > 0) {
 
                     var updatedQuantity = quantity - answer2;
@@ -64,6 +69,20 @@ inquirer
                         console.log('This is how many items are left: ' + updatedQuantity) 
                         
                     })
+
+                //     connection.query('UPDATE department SET ? WHERE ?', [
+                //         {
+                //             product_sales: stock_quantity
+                //         },
+                //         {
+                //             item_id: id
+                //         }
+
+                //     ], function (err, res) {
+                //         console.log('Your updated inventory for ' + productname + 'is: ' + stock_quantity)
+                // })
+
+
                     connection.end()
                 }
                 else {
