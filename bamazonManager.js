@@ -62,9 +62,9 @@ function viewProducts() {
     connection.query('SELECT * from products', function (err, res) {
 
         for (var i = 0; i < res.length; i++) {
-    
+        
         console.log('ITEM ID: ' + res[i].item_id + ' NAME: ' + res[i].product_name + '  PRICE: ' + res[i].price + ' QUANTITY: ' + res[i].stock_quantity)    
-          
+        
         }
         welcomeScreen();
 })
@@ -75,9 +75,9 @@ function viewInventory() {
     connection.query('SELECT * from products WHERE stock_quantity BETWEEN 0 AND 5', function (err, res) {
 
         for (var j = 0; j < res.length; j++) {
-    
+        console.log('-----------------------------------')
         console.log('ITEM ID: ' + res[j].item_id + ' NAME: ' + res[j].product_name + '  PRICE: ' + res[j].price + ' QUANTITY: ' + res[j].stock_quantity)    
-          
+        console.log('-----------------------------------') 
         }
         welcomeScreen();
 })
