@@ -54,7 +54,6 @@ connection.query('SELECT * from products', function (err, res) {
                         if (answer2 <= quantity && answer2 > 0) {
 
                             var updatedQuantity = quantity - answer2;
-                            console.log(updatedQuantity)
 
 
                             connection.query('UPDATE products SET ? WHERE ?', [
@@ -79,7 +78,6 @@ connection.query('SELECT * from products', function (err, res) {
 
 
                                 function (err, res) {
-                                    // console.log(res[0])
                                     product_sales = res[0].product_sales
                                     deptID = res[0].department_id
                                     updateDept();

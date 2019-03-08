@@ -60,7 +60,7 @@ welcomeScreen();
 function viewProducts() {
    
     connection.query('SELECT * from products', function (err, res) {
-        console.log(res)
+
         for (var i = 0; i < res.length; i++) {
     
         console.log('ITEM ID: ' + res[i].item_id + ' NAME: ' + res[i].product_name + '  PRICE: ' + res[i].price + ' QUANTITY: ' + res[i].stock_quantity)    

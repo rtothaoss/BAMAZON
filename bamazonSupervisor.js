@@ -56,10 +56,13 @@ function viewProducts() {
 
             allValues.push([res[i].department_id, res[i].department_name, res[i].overhead_costs, res[i].product_sales, res[i].product_sales - res[i].overhead_costs])
 
+            // console.table([{department_id: res[i].department_id, department_name: res[i].department_name, overhead_costs: res[i].overhead_costs, product_sales: res[i].product_sales, total_profits: res[i].product_sales - res[i].overhead_costs}])
         }
-
+        // console.table([{department_id: 1, department_name: 2, overhead_costs: 3, product_sales: 4, total_profits: 5}])
+        console.log('-----------------------------------------------------------')
         console.table(['department_id', 'department_name', 'overhead_costs', 'product_sales', 'total_profit'], allValues);
-        
+        console.log('-----------------------------------------------------------')
+        welcomeScreen();
     })
    
 }
