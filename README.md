@@ -24,18 +24,17 @@ If that is not the case then the total of the products they purchased will be ad
 *Used the products SQL table* 
 
 The user will be first prompted with a list of menu options.
-** View Products for Sale ** will display a list of all the items for sale along with crucial details like how much stock is left.
-** View Low Inventory ** will display a list of items that have a stock level below 5.
-** Add to Inventory ** gives the user the ability to add more stock of an item already in the system.
-** Add New Product ** allows someone to add a completely new product into the system.
+**View Products for Sale** will display a list of all the items for sale along with crucial details like how much stock is left.
+**View Low Inventory** will display a list of items that have a stock level below 5.
+**Add to Inventory** gives the user the ability to add more stock of an item already in the system.
+**Add New Product** allows someone to add a completely new product into the system.
 
 ### Supervisor Level
 *Used the department SQL table*
 
 The user will be first prompted with a list of menu options.
-** View Product Sales by Department ** displays a table in console with information like department name, overhead costs,
-            product sales, and total profit.
-** Create New Department ** allowed the user to input a new department into the table. 
+**View Product Sales by Department** displays a table in console with information like department name, overhead costs, product sales, and total profit.
+**Create New Department** allowed the user to input a new department into the table. 
 
 
 
