@@ -2,6 +2,8 @@
 
 *A storefront cli that combines MySQL and node.js to give the user the ability to be a customer, manager, or supervisor.*
 
+Video Example: https://www.dropbox.com/s/92r02gk10m4hzdd/bamazon-RossCarmack.mov?dl=0
+
 ### Technologies Used: 
 * MySQL 
 * node.js
